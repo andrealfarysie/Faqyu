@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','FrontController@getIndex');
+Route::get('detail/{id}','FrontController@getDetailFaq');
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
