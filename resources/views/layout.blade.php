@@ -174,9 +174,9 @@
 
           <!-- Links -->
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="link-white-55" href="#">Tentang Kami</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Layanan</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Kontak Kami</a></li>
+            <li class="mb-3"><a class="link-white-55" href="http://simotor.id/#/tentang">Tentang Kami</a></li>
+            <li class="mb-3"><a class="link-white-55" href="http://simotor.id/#/features">Layanan</a></li>
+            <li class="mb-3"><a class="link-white-55" href="{{url('kontak')}}">Kontak Kami</a></li>
           </ul>
           <!-- End Links -->
         </div>
@@ -186,9 +186,8 @@
 
           <!-- Links -->
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="link-white-55" href="#">FAQ</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Syarat dan Ketentuan</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Kebijakan Privasi</a></li>
+            <li class="mb-3"><a class="link-white-55" href="http://simotor.id/#/syaratketentuan">Syarat dan Ketentuan</a></li>
+            <li class="mb-3"><a class="link-white-55" href="http://simotor.id/#/kebijakan">Kebijakan Privasi</a></li>
           </ul>
           <!-- End Links -->
         </div>

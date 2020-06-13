@@ -42,37 +42,7 @@
             </li>
           </ul>
 
-         <!--  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item ml-lg-6 mb-2 mb-lg-0">
-              <a class="nav-link px-0" href="home-page-1.html">Home</a>
-            </li>
-            <li class="nav-item dropdown active ml-lg-6 mb-2 mb-lg-0">
-              <a class="nav-link px-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pages <i class="fas fa-angle-down small ml-1"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="home-page-2.html">Home Option</a>
-                <a class="dropdown-item" href="home-page-3.html">Home Dark</a>
-                <a class="dropdown-item active" href="article.html">Article</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="contacts.html">Contacts</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown ml-lg-6 mb-2 mb-lg-0">
-              <a class="nav-link px-0" href="#" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Docs Layouts <i class="fas fa-angle-down small ml-1"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
-                <a class="dropdown-item" href="doc-1.html" target="_blank">Docs Layout 1 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-2"></i></a>
-                <a class="dropdown-item" href="doc-2.html" target="_blank">Docs Layout 2 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
-                <a class="dropdown-item" href="doc-3.html" target="_blank">Docs Layout 3 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
-                <a class="dropdown-item" href="doc-4.html" target="_blank">Docs Layout 4 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
-              </div>
-            </li>
-            <li class="nav-item ml-lg-6 mb-2 mb-lg-0">
-              <a class="nav-link px-0" href="https://github.com/htmlstreamofficial/docs-ui-kit" target="_blank"><i class="fab fa-github mr-1"></i> Star on Github</a>
-            </li>
-          </ul> -->
+         
         </div>
       </div>
     </nav>
@@ -152,9 +122,9 @@
 
           <!-- Links -->
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="link-white-55" href="#">Tentang Kami</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Layanan</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Kontak Kami</a></li>
+            <li class="mb-3"><a class="link-white-55" href="http://simotor.id/#/tentang">Tentang Kami</a></li>
+            <li class="mb-3"><a class="link-white-55" href="http://simotor.id/#/features">Layanan</a></li>
+            <li class="mb-3"><a class="link-white-55" href="{{url('kontak')}}">Kontak Kami</a></li>
           </ul>
           <!-- End Links -->
         </div>
@@ -164,9 +134,8 @@
 
           <!-- Links -->
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="link-white-55" href="#">FAQ</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Syarat dan Ketentuan</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Kebijakan Privasi</a></li>
+            <li class="mb-3"><a class="link-white-55" href="http://simotor.id/#/syaratketentuan">Syarat dan Ketentuan</a></li>
+            <li class="mb-3"><a class="link-white-55" href="http://simotor.id/#/kebijakan">Kebijakan Privasi</a></li>
           </ul>
           <!-- End Links -->
         </div>
