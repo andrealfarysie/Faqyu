@@ -13,6 +13,8 @@
 
 Route::get('/','FrontController@getIndex');
 Route::get('detail/{id}','FrontController@getDetailFaq');
+Route::get('kategori/{id}','FrontController@getKategori');
+Route::get('kontak','FrontController@getKontak');
 
 // Route::get('/', function () {
 //     return view('welcome');

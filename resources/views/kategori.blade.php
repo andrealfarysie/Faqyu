@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>SiMotor FAQ | Detail FAQ</title>
+  <title>SiMotor FAQ | {{$kategori->description}}</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -85,15 +85,9 @@
     <div class="container duik-promo-container">
       <div class="d-flex position-relative mh-25rem pt-11 py-6">
         <div class="align-self-center">
-          <h1 class="text-white font-weight-light mb-3">{{$faq->header}}</h1>
+          <h1 class="text-white font-weight-light mb-3">{{$kategori->description}}</h1>
 
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb-light">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Pages</a></li>
-              <li class="breadcrumb-item active" aria-current="page">{{$faq->header}}</li>
-            </ol>
-          </nav>
+          <h4 class="h6 text-white mb-3">Cari motor bekas berkualitas terbaik di SiMotor!</h4>
 
            <form class="input-group mb-3">
             <input class="form-control border-0" type="search" placeholder="Cari isu...">
@@ -115,39 +109,32 @@
   <!-- End Promo Section -->
 
   <main>
-    <div class="container py-10">
-      <div class="row">
-        <div class="col-lg-8 mb-11 mb-lg-4 pr-lg-6">
-          
-          
-          {!! $faq->text !!}
-          <!-- Resolved -->
-          <div class="text-center border-top mt-6 pt-6">
-            <h4 class="h6 mb-4">Apa artikel ini cukup membantu?</h4>
-
-            <button type="button" class="btn btn-sm btn-outline-primary mx-1"><i class="fa fa-thumbs-up mr-1"></i> Ya, terima kasih!</button>
-            <button type="button" class="btn btn-sm btn-outline-primary mx-1"><i class="fa fa-thumbs-down mr-1"></i> Tidak terlalu</button>
+     <section class="py-11">
+      <div class="container">
+        @foreach($faq as $post)
+ <a class="row border rounded align-items-center justify-content-between py-4 px-3 link-dark link-hover-dark bg-hover-light mx-sm-0 mb-2" href="{{url('detail/'.$post->id)}}">
+          <div class="col-sm">
+            {{$post ->header}}
           </div>
-        </div>
-        <!-- End Resolved -->
 
-        <div class="col-lg-4 mb-4">
-          <div class="card p-3 border-0 shadow">
-            <div class="card-header pb-0">
-              <h4 class="h5 mb-3">Pertanyaan Terkait</h4>
-            </div>
-            <div class="card-body">
-              <ul class="list-line mb-0">
-                <li class="mb-3"><a class="link-muted" href="#">Guarantee?</a></li>
-                <li class="mb-3"><a class="link-muted" href="#">Do you have any built-in caching?</a></li>
-                <li class="mb-3"><a class="link-muted" href="#">Can I add/upgrade my plan at any time?</a></li>
-                <li class="mb-3"><a class="link-muted" href="#">What access comes with my hosting plan?</a></li>
-              </ul>
+          <div class="col-sm-3 small text-lh-1">
+            <div class="media align-items-center">
+              <!-- <div class="rounded-circle mr-2">
+                <img class="img-fluid rounded-circle" src="{{asset('docs-ui-kit/assets/img-temp/100x100/img1.jpg')}}" alt="Image Description" width="33">
+              </div> -->
+
+              <div class="h6 media-body">{{$kategori->description}}</div>
             </div>
           </div>
-        </div>
+
+          <div class="col-sm-2 text-sm-right text-muted small">
+            {{date('d F Y', strtotime($post->created_at))}}
+          </div>
+        </a>
+@endforeach
       </div>
-    </div>
+    </section>
+   
   </main>
 
   <!-- Footer -->

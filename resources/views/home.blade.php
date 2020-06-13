@@ -10,11 +10,11 @@
 
           <div class="col-sm-3 small text-lh-1">
             <div class="media align-items-center">
-              <div class="rounded-circle mr-2">
+              <!-- <div class="rounded-circle mr-2">
                 <img class="img-fluid rounded-circle" src="{{asset('docs-ui-kit/assets/img-temp/100x100/img1.jpg')}}" alt="Image Description" width="33">
-              </div>
+              </div> -->
 
-              <div class="media-body">Nick Brown</div>
+              <div class="h6 media-body">Kategori</div>
             </div>
           </div>
 
@@ -29,20 +29,16 @@
 
 @section('category')
 @foreach($categories as $category)
-<div class="row">
           <div class="col-md-6 mb-5">
             <div class="media h-100 shadow rounded p-4">
               <i class="far fa-fw fa-dot-circle fa-3x text-warning mr-4 mt-1"></i>
 
               <div class="media-body">
-                <h5 class="mb-1"><a class="link-dark" href="article.html">{{$category->description}}</a></h5>
+                <h5 class="mb-1"><a class="link-dark" href="{{url('kategori/'.$category->id)}}">{{$category->description}}</a></h5>
                 <p class="mb-0">Welcome to Docs UI Kit! We're so glad you're here. Let's get started!</p>
               </div>
             </div>
           </div>
-
-      
-</div>
 
 @endforeach
 

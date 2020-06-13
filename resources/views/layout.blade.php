@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>SiMotor FAQ</title>
+  <title>SiMotor FAQ | Home</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -10,31 +10,6 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="{{asset('docs-ui-kit/favicon.png')}}">
-
-  <!--  Meta tags -->
-  <meta name="keywords" content="documentation template, help desk, open source, free template, freebies, bootstrap 4, bootstrap4">
-  <meta name="description" content="Docs UI Kit is beautiful Open Source Bootstrap 4 UI Kit under MIT license. The UI Kit comes with 10 beautiful complete and functional pages including lots of reusable and customizable UI Blocks. Every component crafted with love to speed up your workflow.">
-
-  <!-- Schema.org -->
-  <meta itemprop="name" content="Documentation Help Desk by Htmlstream">
-  <meta itemprop="description" content="Docs UI Kit is beautiful Open Source Bootstrap 4 UI Kit under MIT license. The UI Kit comes with 10 beautiful complete and functional pages including lots of reusable and customizable UI Blocks. Every component crafted with love to speed up your workflow.">
-  <meta itemprop="image" content="{{asset('docs-ui-kit/docs-ui-kit-thumbnail.jpg')}}">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="product">
-  <meta name="twitter:site" content="@htmlstream">
-  <meta name="twitter:title" content="Documentation Help Desk by Htmlstream">
-  <meta name="twitter:description" content="Docs UI Kit is beautiful Open Source Bootstrap 4 UI Kit under MIT license. The UI Kit comes with 10 beautiful complete and functional pages including lots of reusable and customizable UI Blocks. Every component crafted with love to speed up your workflow.">
-  <meta name="twitter:creator" content="@htmlstream">
-  <meta name="twitter:image" content="docs-ui-kit-thumbnail.jpg">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Documentation Help Desk by Htmlstream">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://htmlstream.com/preview/docs-ui-kit/index.html">
-  <meta property="og:image" content="docs-ui-kit-thumbnail.jpg">
-  <meta property="og:description" content="Docs UI Kit is beautiful Open Source Bootstrap 4 UI Kit under MIT license. The UI Kit comes with 10 beautiful complete and functional pages including lots of reusable and customizable UI Blocks. Every component crafted with love to speed up your workflow.">
-  <meta property="og:site_name" content="Htmlstream">
 
   <!-- Google Fonts -->
   <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
@@ -51,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark gradient-primary position-absolute left-0 right-0 flex-nowrap z-index-3">
       <div class="container">
-        <a class="navbar-brand" href="home-page-1.html"><img src="{{asset('docs-ui-kit/assets/img/logo-light.png')}}" alt="Docs UI Kit" style="width: 150px;"></a>
+        <a class="navbar-brand" href=""><img src="{{asset('docs-ui-kit/assets/img/logo-light.png')}}" alt="Docs UI Kit" style="width: 150px;"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -60,11 +35,11 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
           <ul class="navbar-nav mt-2 mt-lg-0 small">
             <li class="nav-item mb-2 mb-lg-0">
-              <a class="nav-link" href="index.html">Back to UI Kit</a>
+              <a class="nav-link">Pusat Bantuan</a>
             </li>
           </ul>
 
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <!-- <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item ml-lg-6 mb-2 mb-lg-0">
               <a class="nav-link px-0" href="home-page-1.html">Home</a>
             </li>
@@ -94,7 +69,7 @@
             <li class="nav-item ml-lg-6 mb-2 mb-lg-0">
               <a class="nav-link px-0" href="https://github.com/htmlstreamofficial/docs-ui-kit" target="_blank"><i class="fab fa-github mr-1"></i> Star on Github</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </nav>
@@ -110,13 +85,17 @@
           <h1 class="h2 text-white mb-3">Butuh Bantuan?</h1>
 
           <form class="input-group mb-3">
-            <input class="form-control border-0" type="search" placeholder="Search">
+            <input class="form-control border-0" type="search" placeholder="Cari isu...">
             <span class="input-group-append p-0">
               <button class="btn text-muted" type="submit"><i class="fas fa-search"></i></button>
             </span>
           </form>
 
-          <p class="font-weight-light small text-left"><span class="mr-2">Popular Topics:</span> <a class="text-white mr-1" href="#">Stream UI Kit</a>, <a class="text-white mr-1" href="#">Docs UI Kit</a>, <a class="text-white mr-1" href="#">Launch Coming Soon Page</a></p>
+          <p class="font-weight-light small text-left"><span class="mr-2">Kategori Populer:</span> 
+            <a class="text-white mr-1" href="#">Stream UI Kit</a>, 
+            <a class="text-white mr-1" href="#">Docs UI Kit</a>, 
+            <a class="text-white mr-1" href="#">Launch Coming Soon Page</a>
+          </p>
         </div>
       </div>
     </div>
@@ -141,8 +120,8 @@
     <section class="py-11">
       <div class="container">
         <div class="w-md-75 w-lg-50 mx-auto text-center mb-5">
-          <h2 class="h3 text-center">Most Helpful Articles</h2>
-          <p>Start here to find best possible answers from our experts.</p>
+          <h2 class="h3 text-center">Isu Paling Dicari</h2>
+          <p>Siapa tau apa yang Anda cari ada disini.</p>
         </div>
 
         @yield("container")
@@ -159,19 +138,23 @@
       <div class="container">
         <div class="w-md-75 w-lg-50 mx-auto text-center mb-5">
           <h2 class="h3 text-center">Cari Kategori</h2>
-          <p>Htmlstream community is your first stop for questions and advice about the UI Kit. Welcome to the community!</p>
+          <p>Temukan isu berdasarkan kategori yang sudah kami sediakan. Selamat datang di komunitas SiMotor!</p>
         </div>
 
-        @yield("category")
+        <div class="row">
+          @yield("category")
+        </div>
+
+   
       </div>
     </section>
 
     <section class="py-11 text-center">
       <div class="container">
         <i class="fas fa-headset fa-4x text-primary mb-4"></i>
-        <h2 class="h3 mb-3">Can't find what you're looking for?</h2>
-        <div class="lead mb-5">Let us help you right now!</div>
-        <a class="btn px-5 btn-primary" href="#">Submit a Request</a>
+        <h2 class="h3 mb-3">Tidak menemukan apa yang Anda cari?</h2>
+        <div class="lead mb-5">Biarkan kami membantu Anda!</div>
+        <a class="btn px-5 btn-primary" href="{{url('kontak')}}">Ajukan Pertanyaan</a>
       </div>
     </section>
 
@@ -183,40 +166,39 @@
       <div class="row justify-content-md-between">
         <div class="col-md-12 col-lg-4 mb-4 mr-lg-auto">
           <img class="mb-3" src="{{asset('docs-ui-kit/assets/img/logo-light.png')}}" alt="Docs UI Kit" style="width: 170px;">
-          <p class="small font-weight-light mb-3">Docs UI Kit is fully responsive template with variety of documentation layouts, functional features and ready to use pages.</p>
+          <p class="small font-weight-light mb-3">SiMotor adalah platform daring yang berfokus pada sepeda motor, dikembangkan dan dikelola oleh Digital Network Asia. Aplikasi ini gratis dan bisa digunakan oleh siapa saja. </p>
         </div>
 
         <div class="col-sm-4 col-lg-2 mb-4">
-          <h4 class="h6 text-white mb-3">Company</h4>
+          <h4 class="h6 text-white mb-3">SiMotor</h4>
 
           <!-- Links -->
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="link-white-55" href="#">About Us</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Offers</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Contacts</a></li>
+            <li class="mb-3"><a class="link-white-55" href="#">Tentang Kami</a></li>
+            <li class="mb-3"><a class="link-white-55" href="#">Layanan</a></li>
+            <li class="mb-3"><a class="link-white-55" href="#">Kontak Kami</a></li>
           </ul>
           <!-- End Links -->
         </div>
 
         <div class="col-sm-4 col-lg-2 mb-4">
-          <h4 class="h6 text-white mb-3">Support</h4>
+          <h4 class="h6 text-white mb-3">Pusat Bantuan</h4>
 
           <!-- Links -->
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="link-white-55" href="#">Community</a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">Status</a></li>
             <li class="mb-3"><a class="link-white-55" href="#">FAQ</a></li>
+            <li class="mb-3"><a class="link-white-55" href="#">Syarat dan Ketentuan</a></li>
+            <li class="mb-3"><a class="link-white-55" href="#">Kebijakan Privasi</a></li>
           </ul>
           <!-- End Links -->
         </div>
 
         <div class="col-sm-4 col-lg-2 mb-4">
-          <h4 class="h6 text-white mb-3">Contacts</h4>
+          <h4 class="h6 text-white mb-3">Unduh</h4>
 
           <!-- Links -->
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="link-white-55" href="#">info@htmlstream.com </a></li>
-            <li class="mb-3"><a class="link-white-55" href="#">1-800-643-4500</a></li>
+            <li class="mb-3"><a href='https://play.google.com/store/apps/details?id=com.digitalnetworkasia.simotorbeta' target="_blank"><img alt='Get it on Google Play' src='http://www.faveohelpdesk.com/wp-content/uploads/2016/12/google-1.png'  width="200px"/></a></li>
           </ul>
           <!-- End Links -->
         </div>
@@ -226,27 +208,27 @@
 
       <div class="row">
         <div class="col-md-7">
-          <p class="small font-weight-light mb-md-0">&copy; 2019 <a class="text-white" href="https://htmlstream.com/">Htmlstream</a>. Under MIT license.</p>
+          <p class="small font-weight-light mb-md-0">&copy; 2020 <a class="text-white" href="http://simotor.id/">Digital Network Asia.</a></p>
         </div>
 
         <div class="col-md-5 text-md-right">
           <ul class="list-inline mb-0">
             <li class="list-inline-item mr-1 mr-xl-2">
-              <a class="link-white-55" target="_blank" href="https://github.com/htmlstreamofficial/">
+              <a class="link-white-55" target="_blank" href="https://github.com/digitalnetworkasia/">
                 <i class="fab fa-github"></i>
               </a>
             </li>
             <li class="list-inline-item mx-1 mx-xl-2">
-              <a class="link-white-55" target="_blank" href="https://www.facebook.com/htmlstream">
-                <i class="fab fa-facebook"></i>
+              <a class="link-white-55" target="_blank" href="https://www.youtube.com/channel/UCBExlB0xnMoTDT8LwVKg9oA">
+                <i class="fab fa-youtube"></i>
               </a>
             </li>
             <li class="list-inline-item mx-1 mx-xl-2">
-              <a class="link-white-55" target="_blank" href="https://www.instagram.com/htmlstream">
+              <a class="link-white-55" target="_blank" href="https://www.instagram.com/simotor">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
-            <li class="list-inline-item mx-1 mx-xl-2">
+           <!--  <li class="list-inline-item mx-1 mx-xl-2">
               <a class="link-white-55" target="_blank" href="https://twitter.com/htmlstream">
                 <i class="fab fa-twitter"></i>
               </a>
@@ -255,7 +237,7 @@
               <a class="link-white-55" target="_blank" href="https://dribbble.com/htmlstream">
                 <i class="fab fa-dribbble"></i>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
