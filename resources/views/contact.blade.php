@@ -73,7 +73,7 @@
     <div class="container duik-promo-container">
       <div class="d-flex justify-content-center mh-35rem py-11">
         <div class="align-self-center">
-          <h1 class="text-white mb-2">Mari Ngobrol</h1>
+          <h1 class="text-white mb-2">Silahkan Bertanya</h1>
           <div class="lead text-white-70">Anda datang di tempat yang tepat</div>
         </div>
       </div>
@@ -121,17 +121,17 @@
   </div>
   <!-- End Icon Blocks -->
 
-  <main>
+ <!--  <main>
     <div class="container">
       <div class="row justify-content-center py-11">
         <div class="col-lg-9">
           <div class="w-md-75 w-lg-50 mx-auto text-center mb-5">
             <h2 class="h3 text-center">Halo!</h2>
             <p>Biasanya, kami membalas dalam 1 hari kerja</p>
-          </div>
+          </div> -->
 
           <!-- Contact Form -->
-          <form>
+        <!--   <form>
             <div class="row">
               <div class="col-md-6 form-group mb-4">
                 <label for="c_name">Nama</label>
@@ -162,12 +162,12 @@
             <div class="text-center">
               <button class="btn btn-primary px-5" type="submit">Kirim</button>
             </div>
-          </form>
+          </form> -->
           <!-- End Contact Form -->
-        </div>
+   <!--      </div>
       </div>
     </div>
-  </main>
+  </main> -->
 
   <!-- Footer -->
  <footer class="bg-dark font-weight-light text-white-55 pt-11 pb-5 overflow-hidden">

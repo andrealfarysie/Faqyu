@@ -59,8 +59,8 @@
 
           <h4 class="h6 text-white mb-3">Cari motor bekas berkualitas terbaik di SiMotor!</h4>
 
-           <form class="input-group mb-3">
-            <input class="form-control border-0" type="search" placeholder="Cari isu...">
+            <form method='get' action='{{url("search")}}' class="input-group mb-3">
+            <input class="form-control border-0" type="search" name="q" placeholder="Cari isu...">
             <span class="input-group-append p-0">
               <button class="btn text-muted" type="submit"><i class="fas fa-search"></i></button>
             </span>

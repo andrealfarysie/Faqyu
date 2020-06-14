@@ -31,16 +31,21 @@
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Description","name"=>"description"];
+			$this->col[] = ["label"=>"Detail","name"=>"detail"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Description','name'=>'description','type'=>'text','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Detail','name'=>'detail','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Logo','name'=>'logo','type'=>'upload','validation'=>'required','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Description","name"=>"description","type"=>"textarea","required"=>TRUE,"validation"=>"required|string|min:5|max:5000"];
+			//$this->form[] = ['label'=>'Description','name'=>'description','type'=>'text','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Detail','name'=>'detail','type'=>'text','validation'=>'required','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Logo','name'=>'logo','type'=>'upload','validation'=>'required','width'=>'col-sm-10'];
 			# OLD END FORM
 
 			/* 

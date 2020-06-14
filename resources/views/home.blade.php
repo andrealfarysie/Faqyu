@@ -31,15 +31,23 @@
 @foreach($categories as $category)
           <div class="col-md-6 mb-5">
             <div class="media h-100 shadow rounded p-4">
-              <i class="far fa-fw fa-dot-circle fa-3x text-warning mr-4 mt-1"></i>
+              <i class="far fa-fw fa-dot-circle fa-3x text-warning mr-4 mt-1">
+              </i>
 
               <div class="media-body">
                 <h5 class="mb-1"><a class="link-dark" href="{{url('kategori/'.$category->id)}}">{{$category->description}}</a></h5>
-                <p class="mb-0">Welcome to Docs UI Kit! We're so glad you're here. Let's get started!</p>
+                <p class="mb-0">{{$category->detail}}</p>
               </div>
             </div>
           </div>
 
+@endforeach
+
+@endsection
+
+@section('category2')
+@foreach($nama as $nama)
+    <a class="text-white mr-1" href="{{url('kategori/'.$nama->id)}}">{{$nama->description}}</a>
 @endforeach
 
 @endsection

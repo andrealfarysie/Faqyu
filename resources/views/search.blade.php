@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>SiMotor FAQ | Detail FAQ</title>
+  <title>SiMotor FAQ | Search</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -42,37 +42,7 @@
             </li>
           </ul>
 
-         <!--  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item ml-lg-6 mb-2 mb-lg-0">
-              <a class="nav-link px-0" href="home-page-1.html">Home</a>
-            </li>
-            <li class="nav-item dropdown active ml-lg-6 mb-2 mb-lg-0">
-              <a class="nav-link px-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pages <i class="fas fa-angle-down small ml-1"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="home-page-2.html">Home Option</a>
-                <a class="dropdown-item" href="home-page-3.html">Home Dark</a>
-                <a class="dropdown-item active" href="article.html">Article</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="contacts.html">Contacts</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown ml-lg-6 mb-2 mb-lg-0">
-              <a class="nav-link px-0" href="#" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Docs Layouts <i class="fas fa-angle-down small ml-1"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
-                <a class="dropdown-item" href="doc-1.html" target="_blank">Docs Layout 1 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-2"></i></a>
-                <a class="dropdown-item" href="doc-2.html" target="_blank">Docs Layout 2 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
-                <a class="dropdown-item" href="doc-3.html" target="_blank">Docs Layout 3 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
-                <a class="dropdown-item" href="doc-4.html" target="_blank">Docs Layout 4 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
-              </div>
-            </li>
-            <li class="nav-item ml-lg-6 mb-2 mb-lg-0">
-              <a class="nav-link px-0" href="https://github.com/htmlstreamofficial/docs-ui-kit" target="_blank"><i class="fab fa-github mr-1"></i> Star on Github</a>
-            </li>
-          </ul> -->
+         
         </div>
       </div>
     </nav>
@@ -85,15 +55,8 @@
     <div class="container duik-promo-container">
       <div class="d-flex position-relative mh-25rem pt-11 py-6">
         <div class="align-self-center">
-          <h1 class="text-white font-weight-light mb-3">{{$faq->header}}</h1>
+          <h1 class="text-white font-weight-light mb-3">{{$header_title}}</h1>
 
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb-light">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Pages</a></li>
-              <li class="breadcrumb-item active" aria-current="page">{{$faq->header}}</li>
-            </ol>
-          </nav>
 
             <form method='get' action='{{url("search")}}' class="input-group mb-3">
             <input class="form-control border-0" type="search" name="q" placeholder="Cari isu...">
@@ -115,38 +78,35 @@
   <!-- End Promo Section -->
 
   <main>
-    <div class="container py-10">
-      <div class="row">
-        <div class="col-lg-8 mb-11 mb-lg-4 pr-lg-6">
-          
-          
-          {!! $faq->text !!}
-          <!-- Resolved -->
-          <div class="text-center border-top mt-6 pt-6">
-            <h4 class="h6 mb-4">Apa artikel ini cukup membantu?</h4>
-
-            <button type="button" class="btn btn-sm btn-outline-primary mx-1"><i class="fa fa-thumbs-up mr-1"></i> Ya, terima kasih!</button>
-            <button type="button" class="btn btn-sm btn-outline-primary mx-1"><i class="fa fa-thumbs-down mr-1"></i> Tidak terlalu</button>
+     <section class="py-11">
+      <div class="container">
+        @foreach($questions as $post)
+ <a class="row border rounded align-items-center justify-content-between py-4 px-3 link-dark link-hover-dark bg-hover-light mx-sm-0 mb-2" href="{{url('detail/'.$post->id)}}">
+          <div class="col-sm">
+            {{$post ->header}}
           </div>
-        </div>
-        <!-- End Resolved -->
 
-        <div class="col-lg-4 mb-4">
-          <div class="card p-3 border-0 shadow">
-            <div class="card-header pb-0">
-              <h4 class="h5 mb-3">Pertanyaan Terkait</h4>
-            </div>
-            <div class="card-body">
-              <ul class="list-line mb-0">
-               @foreach ($relate as $relate)
-                <li class="mb-3"><a class="link-muted" href="{{url('detail/'.$relate->id)}}">{{$relate->header}}</a></li>
-                @endforeach
-              </ul>
+          <div class="col-sm-3 small text-lh-1">
+            <div class="media align-items-center">
+              <!-- <div class="rounded-circle mr-2">
+                <img class="img-fluid rounded-circle" src="{{asset('docs-ui-kit/assets/img-temp/100x100/img1.jpg')}}" alt="Image Description" width="33">
+              </div> -->
+
+              <div class="h6 media-body">Kategori</div>
             </div>
           </div>
-        </div>
+
+          <div class="col-sm-2 text-sm-right text-muted small">
+            {{date('d F Y', strtotime($post->created_at))}}
+          </div>
+        </a>
+@endforeach
+        @if(count($questions)==0)
+          <div class="alert alert-info">Maaf, topik yang Anda cari belum tersedia! </div>
+        @endif  
       </div>
-    </div>
+    </section>
+   
   </main>
 
   <!-- Footer -->
