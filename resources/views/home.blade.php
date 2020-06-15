@@ -14,7 +14,7 @@
                 <img class="img-fluid rounded-circle" src="{{asset('docs-ui-kit/assets/img-temp/100x100/img1.jpg')}}" alt="Image Description" width="33">
               </div> -->
 
-              <div class="h6 media-body">Kategori</div>
+              <div class="h6 media-body">{{$post->description}}</div>
             </div>
           </div>
 

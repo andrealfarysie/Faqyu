@@ -162,18 +162,18 @@
 
         <div class="col-md-5 text-md-right">
           <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-1 mr-xl-2">
+      <!--       <li class="list-inline-item mr-1 mr-xl-2">
               <a class="link-white-55" target="_blank" href="https://github.com/digitalnetworkasia/">
                 <i class="fab fa-github"></i>
               </a>
-            </li>
+            </li> -->
             <li class="list-inline-item mx-1 mx-xl-2">
               <a class="link-white-55" target="_blank" href="https://www.youtube.com/channel/UCBExlB0xnMoTDT8LwVKg9oA">
                 <i class="fab fa-youtube"></i>
               </a>
             </li>
             <li class="list-inline-item mx-1 mx-xl-2">
-              <a class="link-white-55" target="_blank" href="https://www.instagram.com/simotor">
+              <a class="link-white-55" target="_blank" href="https://www.instagram.com/simotor.id">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>

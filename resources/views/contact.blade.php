@@ -97,15 +97,17 @@
             <svg class="duik-icon-svg-primary duik-icon-svg-3x mb-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
 
             <h4 class="h5 mb-2">Live Chat</h4>
-            <a class="link-dark" href="#">Obrol langsung dengan admin kami</a>
+            <a class="link-dark" href="http://simotor.id/#/">Obrol langsung dengan admin kami</a>
           </div>
         </div>
         <div class="col-md border-md-left border-bottom border-md-bottom-0">
           <div class="duik-icon-block__item">
             <svg class="duik-icon-svg-primary duik-icon-svg-3x mb-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
 
+            
+
             <h4 class="h5 mb-2">Whatsapp</h4>
-            <a class="link-dark" href="#">Temukan kami di Whatsapp</a>
+            <a class="link-dark" href="https://api.whatsapp.com/send?phone=+628111873434">Temukan kami di Whatsapp</a>
           </div>
         </div>
         <div class="col-md border-md-left">
@@ -113,7 +115,7 @@
             <svg class="duik-icon-svg-primary duik-icon-svg-3x mb-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
 
             <h4 class="h5 mb-2">Nomor Telepon</h4>
-            <span>1-800-643-4500</span>
+            <span>+62 811-1873-434</span>
           </div>
         </div>
       </div>
@@ -222,18 +224,18 @@
 
         <div class="col-md-5 text-md-right">
           <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-1 mr-xl-2">
+           <!--  <li class="list-inline-item mr-1 mr-xl-2">
               <a class="link-white-55" target="_blank" href="https://github.com/digitalnetworkasia/">
                 <i class="fab fa-github"></i>
               </a>
-            </li>
+            </li> -->
             <li class="list-inline-item mx-1 mx-xl-2">
               <a class="link-white-55" target="_blank" href="https://www.youtube.com/channel/UCBExlB0xnMoTDT8LwVKg9oA">
                 <i class="fab fa-youtube"></i>
               </a>
             </li>
             <li class="list-inline-item mx-1 mx-xl-2">
-              <a class="link-white-55" target="_blank" href="https://www.instagram.com/simotor">
+              <a class="link-white-55" target="_blank" href="https://www.instagram.com/simotor.id">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>

@@ -11,7 +11,12 @@ class FrontController extends Controller
 
     public function getIndex (){
 
-    	$data['questions'] = DB::table('sfaq_faq')->orderby('id','desc')->take(6)->get();
+    	$data['questions'] = DB::table('sfaq_faq')
+        ->join('sfaq_category','sfaq_faq.id_sfaq_category','=','sfaq_category.id')
+        ->select('sfaq_faq.*','sfaq_category.description')
+        ->orderby('id','desc')
+        ->take(6)
+        ->get();
     	$data['categories'] = DB::table('sfaq_category')->orderby('id','asc')->get();
         $data['nama'] = DB::table('sfaq_category')->orderby('id','asc')->take(4)->get();
     	return view ('home', $data);
@@ -19,8 +24,13 @@ class FrontController extends Controller
     }
 
     public function getDetailFaq($id){
-    	$data['faq'] = DB::table('sfaq_faq')->where('id',$id)->first();
+    	$data['faq'] = DB::table('sfaq_faq')
+        ->where('id',$id)
+        ->first();
         $data['relate'] = DB::table ('sfaq_faq')->where([['id_sfaq_category','=',$data['faq']->id_sfaq_category],['id','!=',$id]])->orderby('id','desc')->take(5)->get();
+        $data['kategori'] = DB::table('sfaq_category')
+        ->where('id','=',$data['faq']->id_sfaq_category)
+        ->first();
     	return view('detail',$data);
     }
 
@@ -51,5 +61,12 @@ class FrontController extends Controller
         $data['nama'] = DB::table('sfaq_category')->orderby('id','asc')->take(4)->get();
         return view ('search', $data);
 
+    }
+
+    public function insertLike ($id,$like,$dislike){
+        DB::table('sfaq_faq_like')
+        -> insert(
+            ['id_sfaq_faq'=> $id, 'likes'=>$like, 'dislike'=>$dislike]
+        );
     }
 }

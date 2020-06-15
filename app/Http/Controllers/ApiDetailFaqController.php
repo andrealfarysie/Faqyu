@@ -26,9 +26,6 @@
 
 		    public function hook_after($postdata,&$result) {
 		        //This method will be execute after run the main process
-		        if ($result['api_status']){
-		        	
-		        }
 
 		    }
 
